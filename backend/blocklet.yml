@@ -1,0 +1,52 @@
+name: nestjs
+title: Todai API
+description: A NestJS blocklet
+keywords:
+  - blocklet
+  - nestjs
+group: dapp
+did: z8ia5jJa7PSU7a3TMTC15EHT6KLumb2BuTECc
+main: dist/main.js
+author:
+  name: Decentral Bros
+  email: team@decentralbros.xyz
+repository:
+  type: git
+  url: 'git+https://github.com/x-wasil-x/todai.git'
+specVersion: 1.2.8
+version: 0.1.70
+logo: logo.png
+files:
+  - .env
+  - dist
+  - blocklet.md
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: '*'
+    port: BLOCKLET_PORT
+    protocol: http
+community: ''
+documentation: ''
+homepage: ''
+license: ''
+payment:
+  price: []
+  share: []
+timeout:
+  start: 60
+requirements:
+  server: '>=1.16.28'
+  os: '*'
+  cpu: '*'
+  nodejs: '>=20.0.0'
+scripts:
+  dev: npm run start
+capabilities:
+  clusterMode: false
+  component: true
+screenshots:
+  - 0.png
+components: []
+environments: []

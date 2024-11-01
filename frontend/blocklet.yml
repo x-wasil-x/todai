@@ -1,0 +1,60 @@
+name: react
+title: Todai
+description: A React blocklet
+keywords:
+  - blocklet
+  - react
+group: dapp
+did: z8iZj7hshJ7h9PKvhuR7qQDQtFiXaNMijnQ2k
+main: api/index.js
+author:
+  name: Decentral Bros
+  email: team@decentralbros.xyz
+repository:
+  type: git
+  url: 'git+https://github.com/x-wasil-x/todai.git'
+specVersion: 1.2.8
+version: 0.1.70
+logo: logo.png
+files:
+  - dist
+  - logo.png
+  - screenshots
+  - api/hooks/pre-start.js
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: '*'
+    port: BLOCKLET_PORT
+    protocol: http
+community: ''
+documentation: ''
+homepage: ''
+license: ''
+payment:
+  price: []
+  share: []
+timeout:
+  start: 60
+requirements:
+  server: '>=1.16.28'
+  os: '*'
+  cpu: '*'
+  nodejs: '>=20.0.0'
+scripts:
+  preStart: node api/hooks/pre-start.js
+  dev: npm run start
+capabilities:
+  clusterMode: false
+  component: true
+  navigation: true
+screenshots:
+  - 0.png
+components: []
+environments:
+  - name: CHAIN_HOST
+    description: What's endpoint of the chain?
+    required: true
+    default: https://beta.abtnetwork.io/api/
+    secure: false

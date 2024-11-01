@@ -1,0 +1,32 @@
+.login-form-container .password-container > div:first-child {
+  margin-bottom: 0.5rem;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.login-bg {
+  background-attachment: absolute;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../../assets/its_okay.webp);
+  height: 100vh;
+  width: 100vw;
+}
+
+.accept-conditions {
+  display: flex;
+  font-size: 0.8rem;
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+}
+.accept-conditions > input {
+  margin-right: 0.5rem;
+}
+
+.username {
+  float: left;
+  margin-right: auto;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}

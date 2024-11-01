@@ -1,0 +1,4 @@
+# Ignore artifacts:
+dist
+yarn.lock
+node_modules
